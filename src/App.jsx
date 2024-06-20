@@ -5,6 +5,7 @@ import Home from './views/Home'
 import About from './views/About' 
 import Chart from './views/Chart'
 import Error from './views/Error'
+import Form from './views/Form'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
         <Route path ="/" element = {<Layout/>}>
           <Route index path="/" element ={<Home/>}/>
           <Route path= "/About" element= {<About/>}/> 
-          <Route path='/chart' element = {<Chart/>} /> 
+          <Route path='/chart' element = {<Chart/>} />
+          <Route path='/form' element = {<Form/>} /> 
           <Route path='*' element = {<Error/>} /> 
         </Route>
       </Routes>

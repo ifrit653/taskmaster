@@ -8,7 +8,7 @@ export default function Navigation({type}) {
       <Container>
         {type === 'header'? <Navbar.Brand href = '/'> <img src="/src/assets/img/logo.svg" alt="logo" className="logo" width='50px' height= '50px'/> </Navbar.Brand> : null}
         <Navbar.Toggle aria-controls='basic-navbar-nav'/>
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className={ type == 'footer'? 'justify-content-center': null }>
           <Nav className="me-auto text-white">
             <LinkContainer to='/'>
               <Nav.Link>Home</Nav.Link>
@@ -18,6 +18,9 @@ export default function Navigation({type}) {
             </LinkContainer>
             <LinkContainer to='/chart'>
               <Nav.Link>Chart</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/form'>
+              <Nav.Link>Form</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
