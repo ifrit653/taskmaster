@@ -1,16 +1,26 @@
-import { Outlet } from "react-router-dom"
 import Navigation from "./Navigation"
-import { Container } from "react-bootstrap"
-import Footer from "./Footer"
 
-export default function Layout() {
+export default function Layout({children}) {
   return (
-    <>
-      <Navigation type = 'header'/> 
-      <Container>
-        <Outlet/> 
-      </Container>
-      <Footer/> 
-    </>
+    <div style={styles.container} className="main-container">
+      <Navigation/> 
+      <div style={styles.container}>
+        <main style = {styles.main}>
+          {children}
+        </main>
+      </div>
+    </div>
   )
+}
+const styles={
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    height: '100vh'
+  },
+  main: {
+    width: '80vw',
+    margin: '0 auto'
+  }
 }

@@ -1,30 +1,23 @@
-import { Container, Nav, Navbar } from "react-bootstrap"
-import {LinkContainer} from 'react-router-bootstrap'
-// import { Link } from "react-router-dom" 
+import { Link } from "react-router-dom"
+import './navigation.css'
 
-export default function Navigation({type}) {
+export default function Navigation() {
   return (
-    <Navbar bg={type === 'header'? 'light':'dark'} expand = 'lg'>
-      <Container>
-        {type === 'header'? <Navbar.Brand href = '/'> <img src="/src/assets/img/logo.svg" alt="logo" className="logo" width='50px' height= '50px'/> </Navbar.Brand> : null}
-        <Navbar.Toggle aria-controls='basic-navbar-nav'/>
-        <Navbar.Collapse id="basic-navbar-nav" className={ type == 'footer'? 'justify-content-center': null }>
-          <Nav className="me-auto text-white">
-            <LinkContainer to='/'>
-              <Nav.Link>Home</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to='/about'>
-              <Nav.Link>About</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to='/chart'>
-              <Nav.Link>Chart</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to='/form'>
-              <Nav.Link>Form</Nav.Link>
-            </LinkContainer>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+        <Link to="/about">about us</Link>
+        </li>
+        <li>
+        <Link to="/form">Services</Link>
+        </li>
+        <li>
+        <Link to="/Chart">Chart</Link>
+        </li>
+      </ul>
+    </nav>
   )
 }
