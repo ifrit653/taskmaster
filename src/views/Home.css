@@ -1,0 +1,47 @@
+/* Conteneur principal pour centrer le contenu */
+.container {
+    display: flex;
+    flex-direction: column; /* Aligner les éléments en colonne */
+    justify-content: center; /* Centrer verticalement */
+    align-items: center; /* Centrer horizontalement */
+    /* Hauteur de la vue */
+    text-align: center; /* Centrer le texte */
+    padding: 20px;
+}
+
+/* Style pour le titre avec un texte dégradé thème technologique */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5); /* Dégradé du bleu clair au bleu foncé */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Style pour la description */
+.description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+/* Style pour les instructions */
+.instructions {
+    font-size: 1em;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Style pour la section des fonctionnalités supplémentaires */
+.additional-options {
+    margin-top: 40px; /* Ajouter un espace au-dessus de la section */
+}
+
+.additional-options h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}

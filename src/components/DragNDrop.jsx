@@ -42,7 +42,7 @@ function DragNDrop() {
         }
       </div>
       <div>
-        <h4 style={styles.text}> Uploaded files </h4>
+        {/* <h4 style={styles.text}> Uploaded files </h4> */}
         <ul>
           {
             files.map((file, index) => (

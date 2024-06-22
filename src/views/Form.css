@@ -1,0 +1,23 @@
+/* Conteneur principal pour centrer le contenu */
+.container {
+    display: flex;
+    flex-direction: column; /* Aligner les éléments en colonne */
+    justify-content: center; /* Centrer verticalement */
+    align-items: center; /* Centrer horizontalement */
+     /* Hauteur de la vue */
+    text-align: center; /* Centrer le texte */
+    
+}
+.card_export {
+    margin-top: 20px; /* Ajouter un espace au-dessus du composant */
+    padding: 20px; /* Ajouter un padding interne */
+    background-color: #f9f9f9; /* Fond blanc pour la carte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre portée */
+    border-radius: 8px; /* Ajouter des coins arrondis */
+}
+
+
+h1 {
+    text-align: 'center';
+    
+  }

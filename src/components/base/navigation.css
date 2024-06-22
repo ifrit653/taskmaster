@@ -1,0 +1,44 @@
+/* Style pour le conteneur de navigation */
+nav {
+    display: flex;
+    justify-content: center; /* Centrer la navigation horizontalement */
+    background-color: #f9f9f9; /* Couleur de fond */
+    padding: 10px 0; /* Ajouter un peu de padding en haut et en bas */
+}
+
+/* Style pour la liste des liens */
+nav ul {
+    list-style-type: none; /* Enlever les puces */
+    padding: 0;
+    margin: 0;
+    display: flex;
+     /* Espacement entre les éléments */
+}
+
+/* Style pour les éléments de la liste */
+nav ul li {
+    margin: 0;
+}
+
+/* Style pour les liens */
+.link {
+    text-decoration: none; /* Enlever le soulignement */
+    color: #007BFF; /* Couleur bleue pour les liens */
+    font-weight: bold; /* Mettre le texte en gras */
+    font-size: 1.2em; /* Augmenter la taille du texte */
+    transition: color 0.3s, background-color 0.3s; /* Transition pour un effet plus doux */
+    padding: 10px 15px; /* Ajouter du padding autour des liens */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+}
+
+/* Style pour les liens actifs */
+.active-link {
+    background-color: #007BFF; /* Fond bleu pour le lien actif */
+    color: white; /* Texte blanc pour le lien actif */
+}
+
+/* Style pour les liens au survol */
+.link:hover {
+    background-color: #0056b3; /* Changer la couleur de fond au survol */
+    color: white; /* Changer la couleur du texte au survol */
+}

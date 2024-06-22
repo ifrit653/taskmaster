@@ -7,6 +7,7 @@ import Register from "../views/auth/Register"
 import Form from "../views/Form"
 import Error from "../views/Error"
 import About from "../views/About"
+import Team from "../views/Team"
 
 export default function RoutesComponent() {
 const location = useLocation()
@@ -18,6 +19,7 @@ const shouldShowlayout = !noLayoutPaths.includes(location.pathname)
             <Layout>
                 <Routes>
                     <Route path = "/" element={<Home/>} />
+                    <Route path = "/Team" element={<Team/>} />
                     <Route path = "/chart" element={<Chart/>} />
                     <Route path = "/form" element={<Form/>} />
                     <Route path = "/about" element={<About/>} />

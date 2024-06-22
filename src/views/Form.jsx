@@ -1,15 +1,15 @@
 import DragNDrop from "../components/DragNDrop";
+import './Form.css'
 
 export default function Form() {
   return (
-    <>
-      <h1 style = {styles.h1}>Drag and Drop File Upload</h1>
-      <DragNDrop/> 
-    </>
+    <div className="container">
+    <h2>Veulliez importer votre fichier</h2>
+   <p> Veuillez importer vos fichiers en les glissant dans la zone ci-dessus ou en cliquant pour sélectionner des fichiers.
+        Les fichiers supportés sont : images (jpg, png), PDF, et DOC.
+   </p>
+    <div className="card_export"><DragNDrop /></div>
+  </div> 
+    
   )
 }
-const styles = {
-  h1: {
-    textAlign: 'center'
-  }
-};
